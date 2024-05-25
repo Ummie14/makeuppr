@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Artist Dashboard</title>
+    <link rel="stylesheet" href="artist dashboard.css">
+    <link rel="icon" href="g l a m h u b.png" type="image/x-icon">
+    <script src="GET.js"></script>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <!----header-->
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="ongoing bookings.html">Ongoing Bookings</a></li>
+                    <li><a href="profile page for artists.html">Profile</a></li>
+                    <li><a href="see booking requests.html">Booking Requests</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="container">
+            <h1>Welcome to Your Dashboard, [Artist Name]!</h1>
+
+            <!-- Profile Management Section -->
+            <div class="profile-section">
+                <h2>Profile Management</h2>
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- More profile fields -->
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+
+            <!-- Booking Management Section -->
+            <div class="booking-section">
+                <h2>Booking Management</h2>
+                <div id="booking-calendar">
+                    <!-- Calendar view of bookings and availability -->
+                </div>
+                <div id="booking-list">
+                    <!-- List of upcoming and past bookings -->
+                </div>
+            </div>
+
+            <!-- Customer Management Section -->
+            <div class="customer-section">
+                <h2>Customer Management</h2>
+                <div id="customer-list">
+                    <!-- List of customers with contact information, appointment history, etc. -->
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div class="reviews-section">
+                <h2>Reviews</h2>
+                <div id="reviews-list">
+                    <!-- List of reviews and ratings from clients -->
+                </div>
+            </div>
+
+            <!-- Promotional Offers Section -->
+            <div class="promotions-section">
+                <h2>Promotional Offers</h2>
+                <div id="promotions-list">
+                    <!-- List of special offers, discounts, or packages -->
+                </div>
+            </div>
+        </div>
+
+        <script src="artist dashboard.js"></script>
+
+        <footer>
+            <div class="about-box">
+                <div class="about-us">
+                    <h2>About Us</h2>
+                    <p>With a keen understanding of the evolving needs of professionals in the makeup industry, <br>
+                        GlamHub's aims to provide a comprehensive suite of tools and resources to streamline workflows,
+                        <br> enhance creativity, and connect artists with clients seamlessly. Through intuitive features
+                        <br> designed for efficiency and versatility, makeup artists can now elevate their craft and
+                        <br>expand their reach with ease, all within the intuitive interface of GlamHub's cutting-edge
+                        <br>platform. This milestone marks another stride forward for GlamHub in revolutionizing the
+                        makeup industry, <br> empowering artists to unleash their full potential in the digital age.
+                    </p>
+                </div>
+
+                <div class="about2">
+                    <section>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>Fz17595@gmail.com</p>
+                            <h3>Phone</h3>
+                            <p>09037135698</p>
+                        </div>
+                    </section>
+                    <div class="social-icons">
+                        <a href="#"> <!-- Link to Instagram profile -->
+                            <img src="instagram_logo.png" alt="Instagram">
+                        </a>
+                        <a href="#"> <!-- Link to TikTok profile -->
+                            <img src="tiktok_logo.png" alt="TikTok">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                <p>&copy; GlamHub 2024. All rights reserved.</p>
+            </div>
+            <button onclick="backToTop()">Back to Top</button>
+
+        </footer>
+
+        <!-- JavaScript for Back to Top button -->
+        <script>
+            function backToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+
+
+    </body>
+
+</html>

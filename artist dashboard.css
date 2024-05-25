@@ -1,0 +1,159 @@
+/* CSS for dashboard sections */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFC0CB;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #eeafba;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+.profile-section,
+.booking-section,
+.customer-section,
+.reviews-section,
+.promotions-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-section:hover,
+.booking-section:hover,
+.customer-section:hover,
+.reviews-section:hover,
+.promotions-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+button,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.booking-item,
+.customer-item,
+.review-item,
+.promotion-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.booking-item:hover,
+.customer-item:hover,
+.review-item:hover,
+.promotion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-item strong,
+.customer-item strong,
+.review-item strong,
+.promotion-item strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.calendar {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.calendar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.day {
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date {
+    width: calc(100% / 7);
+    text-align: center;
+    margin-bottom: 10px;
+}

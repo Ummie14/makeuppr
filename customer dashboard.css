@@ -1,0 +1,185 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eeafba;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+  }
+
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFC0CB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36px;
+    color: #292F3D;
+}
+
+h2 {
+    font-size: 24px;
+    color: #292F3D;
+}
+
+h3 {
+    font-size: 18px;
+    color: #292F3D;
+}
+
+p {
+    margin: 0;
+    color: #64748B;
+}
+
+.profile-section, .bookings-section {
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2, .bookings-section h2 {
+    color: #292F3D;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #64748B;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #D1D5DB;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #212721;
+    color: rgb(238, 243, 240);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    background-color: #2b422c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.artist-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+}
+
+.artist-name {
+    color: #292F3D;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.artist-location, .artist-services, .artist-rating, .artist-availability {
+    color: #64748B;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.search-filter {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#search-input {
+    width: calc(100% - 100px);
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #D1D5DB;
+    margin-right: 10px;
+}
+
+#filter-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bookings-section h3 {
+    color: #292F3D;
+    margin-bottom: 20px;
+}
+
+#upcoming-list, #past-list {
+    list-style: none;
+    padding: 0;
+}
+
+#upcoming-list li, #past-list li {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#upcoming-list li:hover, #past-list li:hover {
+    transform: translateY(-5px);
+}

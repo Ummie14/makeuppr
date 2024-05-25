@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="customer dashboard.css">
+  <link rel="icon" href="g l a m h u b.png" type="image/x-icon">
+  <script src="GET.js"></script>
+  <style>
+    /* CSS for Footer */
+    .about-box {
+      display: flex;
+      gap: 100px;
+      padding: 40px;
+    }
+
+    footer {
+      background-color: #eeafba;
+      color: #111111;
+      /*padding: 10%;*/
+      text-align: left;
+      /*max-height: 200px;*/
+    }
+
+    /* CSS for social media icons */
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 5px;
+    }
+
+    section {
+      display: flex;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home - customer.html">Home</a></li>
+        <li><a href="contact page for customers.html">Contact Us</a></li>
+        <li><a href="customer ongoing booking.html">Ongoing Bookings</a></li>
+        <li><a href="customer profile.html">Profile</a></li>
+        <li><a href="booking page.html">Book Artist</a></li>
+        <li><a href="About Us - Customer.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Welcome to Your Dashboard</h1>
+
+    <!-- Search and Filter Section -->
+    <div class="search-filter">
+      <h2>Search and Filter</h2>
+      <input type="text" id="search-input" placeholder="Search by location, services, or artist name">
+      <button id="filter-button">Filter</button>
+    </div>
+
+    <!-- Makeup Artists Section -->
+    <div id="artist-list">
+      <!-- Makeup artists will be dynamically added here -->
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <h2>Your Profile</h2>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="preferences">Preferences:</label>
+          <textarea id="preferences" name="preferences" rows="4"></textarea>
+        </div>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+
+    <!-- Bookings Section -->
+    <div id="bookings-section">
+      <h2>Your Bookings</h2>
+      <div id="upcoming-bookings">
+        <h3>Upcoming Bookings</h3>
+        <ul id="upcoming-list">
+          <!-- Upcoming bookings will be dynamically added here -->
+        </ul>
+      </div>
+      <div id="past-bookings">
+        <h3>Past Bookings</h3>
+        <ul id="past-list">
+          <!-- Past bookings will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="customer dashboard.js"></script>
+
+  <footer>
+    <div class="about-box">
+      <div class="about-us">
+        <h2>About Us</h2>
+        <p>With a keen understanding of the evolving needs of professionals in the makeup industry<br> GlamHub's aims to
+          provide a comprehensive suite of tools and resources to streamline workflows<br> enhance creativity, and
+          connect artists with clients seamlessly. Through intuitive features<br> designed for efficiency and
+          versatility, makeup artists can now elevate their craft and<br>expand their reach with ease, all within the
+          intuitive interface of GlamHub's cutting-edge<br>platform.This milestone marks another stride forward for
+          GlamHub in revolutionizing the makeup industry,<br> empowering artists to unleash their full potential in the
+          digital age.</p>
+      </div>
+
+      <div class="about2">
+        <section>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>Fz17595@gmail.com</p>
+            <h3>Phone</h3>
+            <p>09037135698</p>
+          </div>
+        </section>
+        <div class="social-icons">
+          <a href="#"> <!-- Link to Instagram profile -->
+            <img src="instagram_logo.png" alt="Instagram">
+          </a>
+          <a href="#"> <!-- Link to TikTok profile -->
+            <img src="tiktok_logo.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="copyright">
+      <p>&copy; GlamHub 2024. All rights reserved.</p>
+    </div>
+    <button onclick="backToTop()">Back to Top</button>
+
+  </footer>
+
+  <!-- JavaScript for Back to Top button -->
+  <script>
+    function backToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>
